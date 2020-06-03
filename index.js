@@ -1,10 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const fs = require('fs');
-const prefix = "whateveryouwant "
+const prefix = "whateveryouwant ";
 
 client.once('ready',()=>{
-    console.log('Mute ready!')
+    console.log('Mute ready!');
 });
 client.once('reconnecting', () => {
     console.log('Reconnecting!');
@@ -22,16 +21,15 @@ client.on('message', async message=>{
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) return;
     if (message.content.startsWith(`${prefix}begin`)){
-        console.log('starting the hell')
+        console.log('starting the hell');
         const voiceChannel = message.member.voice.channel;
         if(!voiceChannel){
             return message.channel.send('no vc');
         }
         var connectzion = await voiceChannel.join();
-        var akbari = message.mentions.members.first()
     }
     if (message.content.startsWith(`${prefix}end`)){
-        console.log('leaving')
+        console.log('leaving');
         const voiceChannel = message.member.voice.channel;
         voiceChannel.leave();
     }
