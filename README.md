@@ -1,6 +1,6 @@
 # cyrusmuter
 Welcome to a mute bot I created with the help of my amigos over at the Discord.js discord!
-> big thanks to them for being amazing
+## big thanks to them for being amazing
 anyways it's pretty simple
 step 1: clone/download whatever 
 step 2: go into index.js
